@@ -22,5 +22,11 @@ describe("#parse()", function(){
 		 
 			expect(results).to.deep.equal(expected);
 		});
+		it("should accept tags without values as a bool", function(){
+			var args = ["--searchContents"];
+			var results = tags.parse(args);
+		 
+			expect(results).to.have.a.property("searchContents", true);
+		});
 	   
    });
