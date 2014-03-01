@@ -28,5 +28,4 @@ describe("#parse()", function(){
 		 
 			expect(results).to.have.a.property("searchContents", true);
 		});
-	   
    });
