@@ -31,3 +31,12 @@ it("Null number checker", function(){
 	}
 	assert.isNotNull(num, 'number is null');
 });
+
+it("checks if car is a function", function(){
+
+function cars(){
+	{return 'I love cars'};
+}	
+assert.isFunction(cars, "we have a car function");
+
+});
