@@ -1,5 +1,6 @@
 var assert = require("chai").assert;
 var should = require("chai").should;
+var tags = require("../lib/code.js");
 
 
 it("each side should is equal", function(){
@@ -18,3 +19,15 @@ it("first letter should equal last letter ", function(){
 	assert(first===last,'first letter doest not equal last letter');		
 });
 
+it("Null number checker", function(){
+
+	var num = 0;
+	function nullcheck(num){
+		if(num !==null){
+			return num;
+		}else{
+			num = 1;
+		}
+	}
+	assert.isNotNull(num, 'number is null');
+});
