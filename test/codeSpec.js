@@ -40,3 +40,13 @@ function cars(){
 assert.isFunction(cars, "we have a car function");
 
 });
+
+
+it("not a function test", function(){
+
+var maker =['ford', 'gmc', 'honda'];
+
+	
+assert.isNotFunction(maker, "multiple brands of car makes");
+
+});
