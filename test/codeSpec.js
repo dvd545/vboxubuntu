@@ -58,3 +58,9 @@ assert.isString(vin, "not a name");
 
 });
 
+it("vin number check", function(){
+
+var vin ="insertvin#here";	
+assert.isNumber(vin, "expected number");
+
+});
