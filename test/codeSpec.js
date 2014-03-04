@@ -50,3 +50,11 @@ var maker =['ford', 'gmc', 'honda'];
 assert.isNotFunction(maker, "multiple brands of car makes");
 
 });
+
+it("name of car", function(){
+
+var vin=23381673;
+assert.isString(vin, "not a name");
+
+});
+
