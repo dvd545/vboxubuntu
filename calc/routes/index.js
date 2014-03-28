@@ -5,12 +5,11 @@ exports.index = function(req, res){
   res.render('index', { title: 'Calculator' });
 };
 
-exports.value = function(req, res){
-	var calc = String(req.query.calculation);
+exports.val = function(req, res){
+	var calc = String(req.query.calcf);
 	var num1 = Number(req.query.x);
 	var num2 = Number(req.query.y);
 	var ans;
-	console.log("Calculator Function:" + calc);
 	if (calc == '+') {
 		ans = math.add(num1,num2);
 	} else if (calc == '-') {
@@ -25,16 +24,16 @@ exports.value = function(req, res){
 	console.log("Second Number:" + num2);
 	
 	
-};
 
-console.log("Answer: " + ans);
+	console.log("Answer: " + ans);
 
-	res.render('value', {title: 'calculator'
-		, calcf: calc
-		, num1: num1
-		, num2: num2
-		, solution: ans
-		});
+	res.render('val', {title: 'calculator'
+							, calcf: calc
+							, x: num1
+							, y: num2
+							, solution: ans
+							});
  
 
 
+};

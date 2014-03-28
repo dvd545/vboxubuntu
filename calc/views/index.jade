@@ -7,9 +7,9 @@ block content
  p Answer: #{solution}
 
  #calcForm
- form(name="calc", action="/value", method="get")
+ form(name="val", action="/val", method="get")
   label Calculation
-  select(name="calculation")
+  select(name="calcf")
    option(value="+", selected) Add
    option(value="-") Subtract
    option(value="*") Multiply
@@ -29,3 +29,4 @@ block content
  #qunit-fixture
  script(src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js")
  script(src="javascripts/plugins.js")
+ 
