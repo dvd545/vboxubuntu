@@ -20,11 +20,16 @@ exports.value = function(req, res){
 	} else {
 		ans = math.divide(num1,num2);
 	}
-
-	res.render('index', { title: 'Calculator', answer: ans });
-  ans = null;
+	console.log("Calculator Function:" + calc);
+	console.log("First Number:" + num1);
+	console.log("Second Number:" + num2);
+	
+	
 };
 
-exports.test = function(req,res){
-  res.render('test', { title: 'Calculator'});
-};
+console.log("Answer: " + ans);
+
+	res.render('Calculator', Title:answer: ans });
+ 
+
+
