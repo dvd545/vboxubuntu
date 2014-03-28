@@ -19,7 +19,7 @@ exports.value = function(req, res){
 		ans = math.multiply(num1,num2);
 	} else {
 		ans = math.divide(num1,num2);
-	}
+	};
 	console.log("Calculator Function:" + calc);
 	console.log("First Number:" + num1);
 	console.log("Second Number:" + num2);
@@ -29,7 +29,12 @@ exports.value = function(req, res){
 
 console.log("Answer: " + ans);
 
-	res.render('Calculator', Title:answer: ans });
+	res.render('value', {title: 'calculator'
+		, calcf: calc
+		, num1: num1
+		, num2: num2
+		, solution: ans
+		});
  
 
 
