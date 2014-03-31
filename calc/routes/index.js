@@ -6,29 +6,32 @@ exports.index = function(req, res){
 };
 
 exports.val = function(req, res){
-	var calc = String(req.query.calcf);
+	var calc = String(req.query.calc);
 	var num1 = Number(req.query.x);
 	var num2 = Number(req.query.y);
 	var ans;
-	if (calc == '+') {
+	
+	console.log("Calculator Function:" + calc);
+	console.log("First Number:" + num1);
+	console.log("Second Number:" + num2);
+	
+	
+	if(calc == '+') {
 		ans = math.add(num1,num2);
-	} else if (calc == '-') {
+	} else if(calc == '-') {
 		ans = math.subtract(num1,num2);
 	} else if (calc == '*') {
 		ans = math.multiply(num1,num2);
 	} else {
 		ans = math.divide(num1,num2);
 	};
-	console.log("Calculator Function:" + calc);
-	console.log("First Number:" + num1);
-	console.log("Second Number:" + num2);
 	
 	
 
 	console.log("Answer: " + ans);
 
-	res.render('val', {title: 'calculator'
-							, calcf: calc
+	res.render('calculator', {title: 'calculator'
+							, calc: calc
 							, x: num1
 							, y: num2
 							, solution: ans

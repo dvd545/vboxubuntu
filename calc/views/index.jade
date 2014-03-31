@@ -1,32 +1,5 @@
 extends layout
-block content
- h1 = title
- p calculation function :#{calcf}
- p First Number: #{x}
- p Second Number: #{y}
- p Answer: #{solution}
 
- #calcForm
- form(name="val", action="/val", method="get")
-  label Calculation
-  select(name="calcf")
-   option(value="+", selected) Add
-   option(value="-") Subtract
-   option(value="*") Multiply
-   option(value="/") Divide
-  br
-  br
-  input(type="number", name="x", placeholder="First Number")
-  br
-  br
-  input(type="number", name="y", placeholder="Second Number")
-  br
-  br
-  input(type="submit", value="GO")
-   
- br  
- #qunit
- #qunit-fixture
- script(src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js")
- script(src="javascripts/plugins.js")
- 
+block content
+ h1 Welcome to the Calculator
+ a(href="/val") Start Calculating

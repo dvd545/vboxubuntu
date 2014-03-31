@@ -1,30 +1,21 @@
+exports = module.exports = {};
 
-exports.add = function(){
-	var a;
-	var b;
-	var result = (a + b);
-	return result;
+exports.add = function(x,y) {
+	var answer = x+y;
+	return answer;
 }
 
-
-exports.subtract = function(){
-	var a;
-	var b;
-	var result = (a - b);
-	return result;
+exports.subtract = function(x,y) {
+	var answer = x-y;
+	return answer;
 }
 
-exports.multiply = function(){
-	var a;
-	var b;
-	var result = (a * b);
-	return result;
+exports.multiply = function(x,y) {
+	var answer = x*y;
+	return answer;
 }
 
-exports.divide = function(){
-	var a;
-	var b;
-	var result = (a / b);
-	return result;
+exports.divide = function(x,y) {
+	var answer = x/y;
+	return answer;
 }
-
