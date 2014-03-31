@@ -1,37 +1,40 @@
 doctype html
 html
-  head
-    title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
-    link(rel='stylesheet', href='qunit.css')
-    script(src='//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js')
-    script(src='qunit.js')
-    script(src='lib/cfunction.js')
-    script(src='test/qtest.js')
-    script(src='test/cfunction.js')
-	script.
-	 test("exports.add", function() {
-	  function add(a, b) {
-	   equal(exports.add(a, b,), 60)
-	   }
-	   add(40, 20)
-	  })
-	  test("exports.multiply", function() {
-	  function multiply(a, b) {
-	   equal(exports.add(a, b,), 60)
-	   }
-	   add(30, 2)
-	  })
-	  test("exports.divide", function() {
-	  function divide(a, b) {
-	   equal(exports.add(a, b,), 6)
-	   }
-	   add(12, 2)
-	  })
-	  test("exports.subtract", function() {
-	  function subtract(a, b) {
-	   equal(exports.add(a, b,), 6)
-	   }
-	   add(10, 4)
-	  })
-    block content
+	head
+		title= title
+		link(rel='stylesheet', href='/stylesheets/style.css')
+		link(rel='stylesheet', href='qunit.css')
+		script(src='//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js')
+		script(src='qunit.js')
+		script(src='lib/cfunction.js')
+		script(src='test/qtest.js')
+		script(src='test/cfunction.js')
+		script.
+			test("exports.val", function() {
+				function val(x, y) {
+					equal(exports.val(x, y), 60)
+				}
+				val(40, 20)
+				})
+		script.
+			test("exports.multiply", function() {
+				function multiply(a, b) {
+					equal(exports.multiply(a, b), 60)
+				}
+				multiply(30, 2)
+			})
+		script.
+			test("exports.divide", function() {
+				function divide(a, b) {
+					equal(exports.divide(a, b), 6)
+				}
+				divide(2, 12)
+		})
+		script.
+			test("exports.subtract", function() {
+				function subtract(a, b) {
+					equal(exports.subtract(a, b), 6)
+				}
+				subtract(10, 4)
+			})
+	block content
