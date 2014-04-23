@@ -16,11 +16,11 @@ exports.val = function(req, res){
 	console.log("Second Number:" + num2);
 	
 	
-	if(calc == '+') {
+	if(calc == 'add') {
 		ans = math.add(num1,num2);
-	} else if(calc == '-') {
+	} else if(calc == 'subtract') {
 		ans = math.subtract(num1,num2);
-	} else if (calc == '*') {
+	} else if (calc == 'multiply') {
 		ans = math.multiply(num1,num2);
 	} else {
 		ans = math.divide(num1,num2);

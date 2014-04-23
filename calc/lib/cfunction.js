@@ -1,21 +1,21 @@
 exports = module.exports = {};
 
-exports.add = function(x,y) {
-	var answer = x+y;
+exports.add = function(a,b) {
+	var answer = a+b;
 	return answer;
 }
 
-exports.subtract = function(x,y) {
-	var answer = x-y;
+exports.subtract = function(a,b) {
+	var answer = a-b;
 	return answer;
 }
 
-exports.multiply = function(x,y) {
-	var answer = x*y;
+exports.multiply = function(a,b) {
+	var answer = a*b;
 	return answer;
 }
 
-exports.divide = function(x,y) {
-	var answer = x/y;
+exports.divide = function(a,b) {
+	var answer = a/b;
 	return answer;
 }
